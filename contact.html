@@ -130,10 +130,10 @@
 
         <div class="row gy-4 mt-1">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.0859221552!2d32.59545117616653!3d0.27763168646403225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbde053c00375%3A0x83e5ce8ecaa86377!2sCina%20Butchery!5e0!3m2!1sen!2sug!4v1733248775845!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><!-- End Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.772126247657!2d32.61144997496447!3d0.27571139972158115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMTYnMzIuNiJOIDMywrAzNic1MC41IkU!5e0!3m2!1sen!2sug!4v1733291111421!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><!-- End Google Maps -->
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+            <!-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -161,8 +161,24 @@
                 </div>
 
               </div>
+            </form> -->
+            <form id="contactForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              
+              <button type="submit">Send</button>
             </form>
-          </div><!-- End Contact Form -->
+            <div id="status"></div>
+            
+          </div>
+          
+          <!--End Contact Form-->
 
         </div>
 
@@ -189,7 +205,7 @@
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/mtrust-suppliers-b4b058338?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGmWeIMIbSj6%2BkPGM1%2B6u5g%3D%3D"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -271,6 +287,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="form.js"></script>
 
 </body>
 
